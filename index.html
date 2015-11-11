@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/main.css">
+</head>
+<body ng-controller="GlobalController">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">KevMoney</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav">
+          <li><a href="#/home" ng-class="{groovy: isClicked('/')}">Home</a></li>
+          <li><a href="#/about" ng-class="{groovy: isClicked('/about')}">About</a></li>
+          <li><a href="#/contact" ng-class="{groovy: isClicked('/contact')}">Contact</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div ng-view></div>
+  {{"hello_class" | kebab}}
+  {{"hello_world" | camel}}
+
+  {{"fucking whores" | pigLatin}};
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+  <script type="text/javascript" src="/app.js"></script>
+  <script type="text/javascript" src="/controllers.js"></script>
+  <script type="text/javascript" src="/filters.js"></script>
+
+</body>
+</html>
